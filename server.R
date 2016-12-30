@@ -1,4 +1,11 @@
+
 shinyServer(function(input, output) {
+  
+  # Load functions
+  
+  source('select_column.R')
+  source('name_report.R')
+  
   
   # Obtaining the four different graphics: 
   # (map, boxplot of consume, bar plot of consume, bar plot of samples)
