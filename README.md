@@ -21,7 +21,7 @@ DrugsPlot solves this problem. These are the characteristics which define the pr
 
 An easy way of interaction between the user and web interface. 
 
-##The user can modify every variable and the webtool reflect changes instantly.
+###The user can modify every variable and the webtool reflect changes instantly.
 ##Clear way of interpretation through legends of color.
 ##Multiple type of graphics (boxplot interactive, map, bar chats) which reflect the same data with different perspectives.
 
