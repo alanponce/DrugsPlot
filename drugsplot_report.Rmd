@@ -1,0 +1,43 @@
+---
+title: DrugsPlot report
+subtitle: '`r name_report2()`'
+date: '`r Sys.Date()`'
+output:
+  rmarkdown::html_document:
+    theme: architect
+---
+
+## European Map
+
+```{r, echo= FALSE, fig.align = "center",  fig.height=6, fig.width=10, warning = FALSE, message=FALSE}
+start_function()[[1]]
+```
+
+## Boxplot - Percentages of consume
+
+```{r, echo= FALSE, fig.align = "center",  fig.height=6, fig.width=10, warning = FALSE, message=FALSE}
+    box_graphic <- start_function()[[4]]
+    
+    p <- ggplotly(box_graphic)
+    q <- plotly_build(p)
+    
+    df_drugs_def_2 <- filter(df_drugs_def, Country %in% c(df_samples_def$Country))
+  
+    q$x$data[1][[1]]$text <- paste0("Country: ", as.character(df_drugs_def_2$Country),
+                                    "<br>", "Value: ", q$x$data[1][[1]]$y, "%")
+    q
+    
+```
+
+## Bar plot - Percentages of consume
+
+```{r, echo= FALSE, , fig.align = "center",  fig.height=6, fig.width=10, warning = FALSE, message=FALSE}
+start_function()[[3]]
+```
+
+##  Bar plot - Sample size
+
+```{r, echo= FALSE, , fig.align = "center",  fig.height=6, fig.width=10, warning = FALSE, message=FALSE}
+start_function()[[2]]
+```
+
