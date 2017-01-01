@@ -19,7 +19,10 @@ The website does not offer visualization tools which allow the user to understan
 
 DrugsPlot solves this problem. These are the characteristics which define the project:
 
-An easy way of interaction between the user and web interface. The user can modify every variable and the webtool reflect changes instantly
-Clear way of interpretation through legends of color.
-Multiple type of graphics (boxplot interactive, map, bar chats) which reflect the same data with different perspectives.
-DrugsPlot has been developed with R language and the packages: ggplot2, dplyr, xlsx, maptools, shiny and plotly among others.
+An easy way of interaction between the user and web interface. 
+
+##The user can modify every variable and the webtool reflect changes instantly.
+##Clear way of interpretation through legends of color.
+##Multiple type of graphics (boxplot interactive, map, bar chats) which reflect the same data with different perspectives.
+
+DrugsPlot has been developed with R language and the packages: ggplot2, dplyr, xlsx, maptools, Shiny and plotly among others.
